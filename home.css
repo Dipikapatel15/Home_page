@@ -1,0 +1,247 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+    background-color: #343a40;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    font-family: 'Roboto', sans-serif; /* Changed font family for header */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+
+nav ul li a:hover {
+    color: #6c63ff; /* New hover color for nav links */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('home_bg2.webp') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideInFromLeft 1.5s ease-out;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Added text shadow to hero title */
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideInFromRight 1.5s ease-out;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Added text shadow to hero paragraph */
+}
+
+/* Section Styles */
+main {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section {
+    background-color: white;
+    width: 45%;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-10px) scale(1.05); /* Scale up effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Background Images */
+#explore {
+    background-image: url('explore.webp');
+}
+
+#plan-your-trip {
+    background-image: url('plan ur trip.jpg');
+}
+
+#festivals-and-events {
+    background-image: url('cultural2.jpg');
+}
+
+#hotel-booking {
+    background-image: url('hotel.jpg');
+}
+
+/* Text Styles */
+h2 {
+    color: white;
+    font-size: 2.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6); /* Added text shadow to section titles */
+    animation: fadeIn 1s ease-in-out;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added text shadow to paragraphs */
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    background-color: rgba(108, 63, 255, 0.8); /* New button color (deep purple) */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Added text shadow to buttons */
+}
+
+button:hover {
+    background-color: rgba(85, 42, 170, 0.9); /* New hover color for buttons */
+    box-shadow: 0 5px 15px rgba(85, 42, 170, 0.4);
+    transform: scale(1.1);
+}
+
+/* Hotel Booking Section */
+select {
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 2px solid #6c63ff; /* Matching the purple color theme */
+    font-size: 1.1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: #553aae; /* Darker purple hover effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8); /* Adjusted for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adjusted for smaller screens */
+    }
+
+    h2 {
+        font-size: 2em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adjusted for smaller screens */
+    }
+}
